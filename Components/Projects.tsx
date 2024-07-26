@@ -73,7 +73,7 @@ const Projects = () => {
               </h2>
               <p className={`text-[16px] mt-[0.5rem] text-center ${darkMode ? 'text-[#d3d2d2]' : 'text-gray-700'}`}>{project.description}</p>
               <div className='mt-[0.5rem]'>
-                <h3 className={`font-semibold text-center ${darkMode ? 'text-[#55e6a5]' : 'text-[#0d6efd]'}`}>Skills Used:</h3>
+                <h3 className={`font-semibold text-center ${darkMode ? 'text-[#55e6a5]' : 'text-[#0d6efd]'}`}>Tech Stack:</h3>
                 <div className='grid grid-cols-4 gap-12 p-4'>
                   <ul className='list-square'>
                     {project.skills.filter((_, idx) => idx % 4 === 0).map((skill, idx) => (
