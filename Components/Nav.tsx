@@ -44,6 +44,7 @@ const Nav = ({ openNav }: Props) => {
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#about">ABOUT</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#experience">EXPERIENCE</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#projects">PROJECTS</a></div>
+            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#skills">SKILLS</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#education">EDUCATION</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#footer">CONTACT</a></div>
           </div>

@@ -21,7 +21,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className={`pt-[4rem] pb-[2rem] ${darkMode ? 'bg-[#02050a]' : 'bg-[#f0f0f0]'}`}>
+    <div className={`pt-[4rem] pb-[2rem] ${darkMode ? 'bg-[#02050a]' : 'bg-[#f0f4f8]'}`}>
       <div className={`flex flex-col md:flex-row justify-around border-b-[1px] pb-[3rem] ${darkMode ? 'border-gray-400' : 'border-gray-600'} w-[90%] mx-auto gap-[2rem]`}>
         <div className="flex items-center space-x-4">
           <div className={`w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-full ${darkMode ? 'bg-[#55e6a5]' : 'bg-[#0d6efd]'}`}>

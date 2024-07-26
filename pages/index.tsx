@@ -5,11 +5,11 @@ import MobileNav from "@/Components/MobileNav";
 import Nav from "@/Components/Nav";
 import Projects from "@/Components/Projects";
 import Services from "@/Components/Services";
-import Skills from "@/Components/Education";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Education from "@/Components/Education";
+import Skills from "@/Components/Skills";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -53,6 +53,7 @@ const HomePage = () => {
           {/* <About /> */}
           <div id="experience"><Services /></div>
           <div id="projects"><Projects /></div>
+          <div id="skills"><Skills /></div>
           <div id="education"><Education /></div>
           <div id="footer"><Footer /></div>
         </div>
