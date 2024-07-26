@@ -21,7 +21,7 @@ const Projects = () => {
       image: '/images/Emotion_based.jpg',
       githubLink: 'https://github.com/sanath9712/EmotionBasedMusicRecommender',
       description: "The emotion-based music recommender detects over 15 different emotions from user inputs and suggests corresponding music to enhance the listening experience.",
-      skills: ["Python", "Flask", "HTML", "CSS", "JavaScript"]
+      skills: ["Python", "Flask", "HTML", "CSS", "JavaScript", "GPT-3.5","OpenAI API","BERT"]
     },
     {
       title: 'Cloud Bursting in Apache Flink',
