@@ -29,7 +29,7 @@ const Skills = () => {
     { name: 'Kubernetes', icon: 'devicon-kubernetes-plain' },
     { name: 'Git', icon: 'devicon-git-plain' },
     { name: 'GitHub', icon: 'devicon-github-original' },
-    { name: 'CI/CD (Jenkins)', icon: 'devicon-jenkins-line' },
+    { name: 'Jenkins', icon: 'devicon-jenkins-line' },
   ];
 
   const databases = [
