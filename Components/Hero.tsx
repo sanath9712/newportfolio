@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="mt-[2rem] flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:items-center sm:space-x-6">
           <a className={`px-[2rem] hover:bg-blue-400 transition-all duration-200 py-[1rem] text-[16px] md:text-[18px] 
           font-bold uppercase ${darkMode ? 'bg-[#55e6a5] text-black' : 'bg-[#0d6efd] text-white'} flex items-center space-x-2 cursor-pointer`} href="/resume/resume.pdf" target="_blank">
-          <p>Check Out My Resume</p>
+          <p>Resume</p>
           <ClipboardDocumentCheckIcon className={`w-[1.6rem] h-[1.7rem] ${darkMode ? 'text-black' : 'text-white'}`} />
           </a>
 
