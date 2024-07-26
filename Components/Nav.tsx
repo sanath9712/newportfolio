@@ -41,7 +41,7 @@ const Nav = ({ openNav }: Props) => {
           </h1>
           <div className="hidden md:flex space-x-6">
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="/">HOME</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#hero">ABOUT</a></div>
+            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#about">ABOUT</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#experience">EXPERIENCE</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#projects">PROJECTS</a></div>
             <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#education">EDUCATION</a></div>
