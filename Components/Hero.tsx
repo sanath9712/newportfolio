@@ -19,7 +19,7 @@ const Hero = () => {
           <TextEffect darkMode={darkMode} /> 
           <p className={`mt-[1.5rem] text-[16px] md:text-[18px] ${darkMode ? 'text-[#ffffff92]' : 'text-[#00000092]'}`}>
           Hello, I'm Sanath Bhimsen. I recently graduated from my Master's program in Computer Science at Boston University.
-          I have over 3 years of experience in frontend backend development, cloud technologies, and building scalable applications.
+          I have over 3 years of experience in frontend and backend development, cloud technologies, and building scalable applications.
           I am actively seeking full-time roles and am eager to explore new opportunities and contribute to innovative projects.
           </p>
           <div className="mt-[2rem] flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:items-center sm:space-x-6">
