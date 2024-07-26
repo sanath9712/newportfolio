@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className={`${darkMode ? 'bg-[#121212]' : 'bg-[#f0f0f0]'} pt-[4rem] md:pt-[8rem] pb-[5rem]`}>
       <p className={`heading ${darkMode ? 'text-white' : 'text-black'}`}>
-        Work Experiences
+        Work Experience
       </p>
       <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-stretch gap-[3rem] mt-[4rem] ${darkMode ? 'text-white' : 'text-black'}`}>
         <div data-aos="fade-right">
