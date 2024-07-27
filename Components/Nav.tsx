@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Switch from '@mui/material/Switch';
 import CssBaseline from '@mui/material/CssBaseline';
 import { useTheme } from '../Components/ThemeContext'; // Adjust the path as needed
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver'; // Import the custom hook
 
 interface Props {
   openNav: () => void;
@@ -13,7 +14,10 @@ interface Props {
 
 const Nav = ({ openNav }: Props) => {
   const [scrolled, setScrolled] = useState(false);
+  const [currentSection, setCurrentSection] = useState<string>(''); // Explicitly define the type
   const { darkMode, toggleDarkMode } = useTheme(); // Use the custom ThemeContext
+
+  useIntersectionObserver(setCurrentSection); // Use the custom hook
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +35,10 @@ const Nav = ({ openNav }: Props) => {
     },
   });
 
+  const getLinkClass = (section: string) => {
+    return `${darkMode ? 'text-white' : 'text-black'} ${currentSection === section ? (darkMode ? 'border border-[#55e6a5] border-4' : 'bg-[#90cdf4]') + ' px-2 rounded' : ''}`;
+  };
+
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
@@ -40,13 +48,12 @@ const Nav = ({ openNav }: Props) => {
             <a href="/">Sanath Bhimsen</a>
           </h1>
           <div className="hidden md:flex space-x-6">
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="/">HOME</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#about">ABOUT</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#experience">EXPERIENCE</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#projects">PROJECTS</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#skills">SKILLS</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#education">EDUCATION</a></div>
-            <div className="nav-link"><a className={`${darkMode ? 'text-white' : 'text-black'}`} href="#footer">CONTACT</a></div>
+            <div className="nav-link"><a className={getLinkClass('about')} href="#about">ABOUT</a></div>
+            <div className="nav-link"><a className={getLinkClass('experience')} href="#experience">EXPERIENCE</a></div>
+            <div className="nav-link"><a className={getLinkClass('projects')} href="#projects">PROJECTS</a></div>
+            <div className="nav-link"><a className={getLinkClass('skills')} href="#skills">SKILLS</a></div>
+            <div className="nav-link"><a className={getLinkClass('education')} href="#education">EDUCATION</a></div>
+            <div className="nav-link"><a className={getLinkClass('footer')} href="#footer">CONTACT</a></div>
           </div>
           <div className="flex items-center space-x-4">
             <div className="flex items-center">

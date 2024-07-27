@@ -48,14 +48,14 @@ const HomePage = () => {
       <div>
         <MobileNav nav={nav} closeNav={closeNav} />
         <Nav openNav={openNav} />
-        <div id="about"><Hero /></div>
+        <section id="about"><Hero /></section>
         <div className="relative z-[30]">
           {/* <About /> */}
-          <div id="experience"><Services /></div>
-          <div id="projects"><Projects /></div>
-          <div id="skills"><Skills /></div>
-          <div id="education"><Education /></div>
-          <div id="footer"><Footer /></div>
+          <section id="experience"><Services /></section>
+          <section id="projects"><Projects /></section>
+          <section id="skills"><Skills /></section>
+          <section id="education"><Education /></section>
+          <section id="footer"><Footer /></section>
         </div>
       </div>
     </div>
