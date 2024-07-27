@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
         <div className="w-full max-w-[500px] hidden lg:flex items-center justify-center">
           <div className="w-[80%] relative pt-[80%] rounded-full overflow-hidden">
-            <Image src="/images/1.jpeg" alt="user" layout="fill" className="object-cover rounded-full"/>
+            <Image src= {darkMode ? '/images/3.jpg' : '/images/2.jpg'} alt="user" layout="fill" className="object-cover rounded-full"/>
           </div>
         </div>
       </div>
